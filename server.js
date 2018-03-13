@@ -45,7 +45,13 @@ app.get('/about', (req, res) => {
 	res.render('about.hbs', {
 		pageTitle: "About Page",
 	});
-}); //This sets a new page in browser localHost:3000/about
+}); //This sets a new page in browser
+
+app.get('/projects', (req, res) {
+	res.render('projects.hbs', {
+		pageTitle: "Projects"
+	});
+});
 
 app.get('/bad', (req, res) => {
 	res.send({
