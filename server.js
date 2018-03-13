@@ -47,7 +47,7 @@ app.get('/about', (req, res) => {
 	});
 }); //This sets a new page in browser
 
-app.get('/projects', (req, res) {
+app.get('/projects', (req, res) => {
 	res.render('projects.hbs', {
 		pageTitle: "Projects"
 	});
